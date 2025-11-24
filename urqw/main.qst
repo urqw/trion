@@ -2383,7 +2383,7 @@ btn forestprothousebegin, Хижина в лесу
 end
 
 :forestprothousebegin
-if musicno=0 then music=2
+if musicno=0 then music="2.ogg"
 valmesknow=1
 common=2
 dangerplace=0
@@ -5507,14 +5507,14 @@ end
 musicno=0
 число=2
 proc rnd
-if common=1 and рнд=1 then music=1
-if common=1 and рнд=2 then music=3
-if common>1 then music=2
+if common=1 and рнд=1 then music="1.ogg"
+if common=1 and рнд=2 then music="3.ogg"
+if common>1 then music="2.ogg"
 end
 
 :Use_Inv_Выключить_музыку
 musicno=1
-music=0
+music=""
 end
  :Use_Inv_Начать_сначала
 clrscr=1
@@ -5902,7 +5902,7 @@ if здоровье>максздоровье+0.9 then здоровье=максздоровье+0.9
 end
 
 :gameover
-music=4
+music="4.ogg"
 instr style_formpicture=999.bmp
 pln #%name$ мёртв... Игра окончена. Чтобы загрузить игру, нажмите Файл>Загрузить игру. Чтобы начать сначала, нажмите кнопку внизу.
 pln #/$#/$#/$#/$Welcome to dying#/$ I don't let it out#/$Welcome to dying#/$Look to the mirror it shows what I am#/$Welcome to dying#/$This town must burn now#/$Welcome to dying#/$Can't you see the dragon's seed bears in me
@@ -6186,8 +6186,8 @@ goto fightchoseweap
 слезливость=0
 число=2
 proc rnd
-if musicno=0 and рнд=1 then music=1
-if musicno=0 and рнд=2 then music=3
+if musicno=0 and рнд=1 then music="1.ogg"
+if musicno=0 and рнд=2 then music="3.ogg"
 proc screenpar
 confuse=0
 confusetime=0
@@ -6727,7 +6727,7 @@ end
 common=2
 imageweapon=1
 proc screenpar
-if musicno=0 then music=2
+if musicno=0 then music="2.ogg"
 image=раса
 сила=сила+плюсксиле
 восприятие=восприятие-плюсквосприятию
