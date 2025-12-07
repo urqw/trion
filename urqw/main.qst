@@ -5135,7 +5135,7 @@ pln - Чего вам надобно, сударь?
 btn forestprotfieldbugsraidertalkbugs, - Что это за создания?
 btn forestprotfieldbugsraidertalkvillage, - Что у вас за деревня?
 if интеллект>=0 then btn forestprotfieldbugs, - #%bye$.
-btn forestprotfieldbugsraiderfight, Атаковать крестьянина
+btn forestprotfieldbugraiderfight, Атаковать крестьянина
 end
 
 :forestprotfieldbugsraidertalkbugs
