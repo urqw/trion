@@ -2923,12 +2923,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn forestprotrmtortalkhello, - #%hello$, Тор!
 if интеллект<0 then btn forestprotrmtortalkstupid, - Эээ...Ммм...Дык...А?
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn forestprotrm, - #%bye$, Тор.
 if интеллект<0 then btn forestprotrm, Шатаясь, отойти
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -2943,15 +2939,8 @@ proc rnd
 proc replicbye
 pln - А я вот сижу тут, понимаешь, от скуки маюсь.
 btn forestprotrmtortalktunnel, - Из-за чего произошёл завал?
-btn 1,-
-btn 1,-
 btn forestprotrmtortalkrm, - Расскажи мне о Красных Горах
-btn 1,-
-btn 1,-
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -2961,11 +2950,7 @@ proc rnd
 proc replicbye
 pln - Пока что почти ничего не известно, но воины, охраняющие другой выход из прохода, говорят, что отчётливо слышали сильный взрыв. Наши послали туда небольшой отряд, чтоб те выяснили что к чему, да вот только он так и не вернулся.
 btn forestprotrmtortalkrm, - Расскажи мне о Красных горах
-btn 1,-
-btn 1,-
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -2985,11 +2970,7 @@ if forestprotrmtortalkrmminute>59 then forestprotrmtortalkrmminute=60-forestprot
 pln #forestprotrmtortalkrmminute$
 pln - А что могло случиться? Как видишь эльфы пока ещё не перевелись, да и столица их на месте... Догадаться, что же было дальше, не трудно.#/$- Но ведь они были полностью в мифриле. Как их могли одолеть?#/$- Уф, утомил ты меня, мил #%race$, чес слово. Дай хоть глотке поостынуть, а то вот уже полчаса говорю и говорю...
 btn forestprotrmtortalktunnel, - Из-за чего произошёл завал?
-btn 1,-
-btn 1,-
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -3005,16 +2986,9 @@ proc replicbye
 torknow=1
 pln - Здесь ты не пройдёшь.#/$- Это ещё чего?#/$- Потому что так сказал я. Я, Тор из клана Белого Камня, должен охранять этот проход от таких вот, как ты.#/$- И как же мне тогда пройти?#/$- Никак. Просто поворачивай и уходи. Ради собственной безопасности. - Гном поднял повыше свой двуручный топор.
 btn forestprotrmtortalkmenace, - А так ли ты уверен в своих силах?
-btn 1,-
-btn 1,-
 btn forestprotrmtortalktrick, - Возможно благородный гном пропустит меня за вознаграждение?
-btn 1,-
-btn 1,-
-if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти & btn 1,- & btn 1,- & btn 1,-
+if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -3024,13 +2998,8 @@ proc rnd
 proc replicbye
 pln - Я более, чем уверен! А ещё я уверен в остроте своего топора!
 btn forestprotrmtortalktrick, - Возможно благородный гном пропустит меня за вознаграждение?
-btn 1,-
-btn 1,-
-if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти & btn 1,- & btn 1,-
+if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
-if tavernstraidertablestraytalktotor=1 then btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -3040,13 +3009,8 @@ proc rnd
 proc replicbye
 pln - Ты за кого меня держишь, чтоб я, Тор из клана Белого Камня, брал какие-то взятки? Ты, дружище, начинаешь мне уже надоедать.
 btn forestprotrmtortalkmenace, - А так ли ты уверен в своих силах?
-btn 1,-
-btn 1,-
-if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти & btn 1,- & btn 1,-
+if tavernstraidertablestraytalktotor=1 then btn forestprotrmtortalkfromtray, - Трэй сказал, что я могу здесь пройти
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
-if tavernstraidertablestraytalktotor=1 then btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -3057,15 +3021,8 @@ proc replicbye
 forestprotrmtorblock=0
 pln - Знаешь Трэя? Хмм, ну ладно, мой брат кому попало тайную информацию не расскажет. Погодь, погодь, а он там не пьяный случаем?#/$- Да нет, в полной трезвости ума.#/$- Ну тогда ладно, проходи. Правда опасно там, темно. Того и гляди споткнёшься обо что-то да шею сломаешь. Так что ты там того, поосторожней.
 btn forestprotrmtortalktunnel, - Из-за чего произошёл завал?
-btn 1,-
-btn 1,-
 btn forestprotrmtortalkrm, - Расскажи мне о Красных Горах
-btn 1,-
-btn 1,-
 btn forestprotrm, - #%bye$, Тор.
-btn 1,-
-btn 1,-
-btn 1,-
 btn forestprotrmtorfight, Атаковать Тора
 end
 
@@ -3224,12 +3181,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn tavernstraideraroundfurgottalkhello, - #%hello$#%cname$!
 if интеллект<0 then btn tavernstraideraroundfurgottalkstupid, Пробормотать что-то невнятное
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn tavernstraideraround, - #%bye$#%cname$.
 if интеллект<0 then btn tavernstraideraround, Отойти
-btn 1,-
-btn 1,-
 instr cname=полу-орка
 if интеллект<2 then instr cname=существо
 if furgotknow=1 then instr cname=Фургота
@@ -3250,18 +3203,13 @@ proc rnd
 instr locname=tavernstraideraroundfurgotdie
 if рнд=1 then pln - Я ваще щас занят, паря... Но... Э... Ладно, минутка у меня найдётся.
 if рнд=2 then pln - Дык, чего тебе? Не видишь - я работаю. Ну ладно, говори - чё надо?
-btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне? & btn 1,- & btn 1,-
+btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне?
 if tavernstraideraroundfurgottalkwoods=0 then btn tavernstraideraroundfurgottalkwood, - Много ещё наколоть нужно? 
 if tavernstraideraroundfurgottalkwoods=1 then btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова
-btn 1,-
-btn 1,-
-if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$ & btn 1,- & btn 1,- & btn 1,-
+if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$
 if furgotknow=1 then instr cname=, Фургот
 if furgotknow=0 then instr cname=
 btn tavernstraideraround, - #%bye$#%cname$
-btn 1,-
-btn 1,-
-btn 1,-
 if furgotknow=0 then instr cname=полу-орка
 if furgotknow=1 then instr cname=Фургота
 btn tavernstraideraroundfurgotfight, Атаковать #%cname$
@@ -3270,16 +3218,13 @@ end
 :tavernstraideraroundfurgottalkwork
 furgottalkvalmes=1
 pln - Ага. Меня нанял этот старый сатир Валмес. И теперя я должен каждый день ему дровки колоть, - а то, посетители, видите ли, замёрзнуть совсем! Бррр, эта работа совсем не для меня! Не, ну конечно, сила-то у меня есть... Но я б лучше с силой этой вражин рубил, а не дрова колол! Бррр!!!
-btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне? & btn 1,- & btn 1,-
-if tavernstraideraroundfurgottalkwoods=0 then btn tavernstraideraroundfurgottalkwood, - Много ещё наколоть нужно? & btn 1,- & btn 1,-
-if tavernstraideraroundfurgottalkwoods=1 then btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова & btn 1,- & btn 1,-
-if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$ & btn 1,- & btn 1,- & btn 1,-
+btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне?
+if tavernstraideraroundfurgottalkwoods=0 then btn tavernstraideraroundfurgottalkwood, - Много ещё наколоть нужно?
+if tavernstraideraroundfurgottalkwoods=1 then btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова
+if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$
 if furgotknow=1 then instr cname=, Фургот
 if furgotknow=0 then instr cname=
 btn tavernstraideraround, - #%bye$#%cname$
-btn 1,-
-btn 1,-
-btn 1,-
 if furgotknow=0 then instr cname=полу-орка
 if furgotknow=1 then instr cname=Фургота
 btn tavernstraideraroundfurgotfight, Атаковать #%cname$
@@ -3313,8 +3258,6 @@ instr cname=furgot
 p #/$- Ну, дык, вроде как спасибо! Не забуду!
 if харизма>1 and furgotaxes=1 then p Вот, держи - для хорошего че& proc tavernstraideraroundfurgottalkwoodyesrace & pln ничего не жалко! (Он протягивает вам свой топор) & proc takeaxe
 btn tavernstraideraroundfurgottalkhello, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraideraround, Закончить разговор
 end
  :tavernstraideraroundfurgottalkwoodyesrace
@@ -3358,8 +3301,6 @@ end
 tavernstraideraroundfurgottalkwoods=1
 pln - Эээ... Ну работы тут часа на два. Если хош, то помоги. Только сразу говорю - денёг в меня нету, так шо ничего я тебе за это не дам.
 btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова
-btn 1,-
-btn 1,-
 btn tavernstraideraroundfurgottalkhello, - Может, как-нибудь потом
 end
 
@@ -3367,21 +3308,16 @@ end
 pln - А меня Фурготом, значить кличат. Ох, и надоела ж мне эта скучная работа!
 tavernstraideraroundfurgottalkabouts=1
 furgotknow=1
-btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне? & btn 1,- & btn 1,-
+btn tavernstraideraroundfurgottalkwork, - Ты работаешь в таверне?
 if tavernstraideraroundfurgottalkwoods=0 then btn tavernstraideraroundfurgottalkwood, - Много ещё наколоть нужно? 
 if tavernstraideraroundfurgottalkwoods=1 then btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова
-btn 1,-
-btn 1,-
-if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$ & btn 1,- & btn 1,- & btn 1,-
+if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$
 число=5
 proc rnd
 proc replicbye
 if furgotknow=1 then instr cname=, Фургот
 if furgotknow=0 then instr cname=
 btn tavernstraideraround, - #%bye$#%cname$
-btn 1,-
-btn 1,-
-btn 1,-
 if furgotknow=0 then instr cname=полу-орка
 if furgotknow=1 then instr cname=Фургота
 btn tavernstraideraroundfurgotfight, Атаковать #%cname$
@@ -3896,12 +3832,10 @@ if trayknow=0 and traybeer=1 then число=7 & proc rnd & proc replichello & pln - 
 число=7
 proc rnd
 proc replichello
-if traybeer=1 then btn tavernstraidertablestraytalkhello, - #%hello$#%cname$!  & btn 1,- & btn 1,-
-if traybeer=0 and Кружка_пива then btn tavernstraidertablestraytalkgivebeer, - Держи, хорошему гному ничего не жалко & btn 1,- & btn 1,-
+if traybeer=1 then btn tavernstraidertablestraytalkhello, - #%hello$#%cname$! 
+if traybeer=0 and Кружка_пива then btn tavernstraidertablestraytalkgivebeer, - Держи, хорошему гному ничего не жалко
 if интеллект>=0 then btn tavernstraidertables, - #%bye$#%cname$.
 if интеллект<0 then btn tavernstraidertables, Шатаясь, отойти
-btn 1,-
-btn 1,-
 instr cname=гнома
 if интеллект<2 then instr cname=существо
 if trayknow=1 then instr cname=Трэя
@@ -3916,36 +3850,22 @@ instr cname=а, хоть и рожа-то не гномья
 if раса=5 then instr cname=а
 pln Гном сразу как-то оживился, живенько протянул свои здоровые руки, сжал кружку с пивом так, что та чуть не треснула. Затем выпил половину содержимого, на время поставил тару на стол. Вам показалось, что он даже протрезвел.#/$- Ну, уж спасибо, браток. Считай, что спас меня. Чего хотел-то?#/$- Да так, поговорить...#/$- Я так и понял, что у тебя родная мне душ#%cname$. Ну что - будем знакомы, что ли. Меня Трэем зовут.#/$- #%name$.
 btn tavernstraidertablestraytalkwhy, - Чего здесь без дела сидишь?
-btn 1,-
-btn 1,-
 btn tavernstraidertablestraytalknnews, - Есть какие-нибудь слухи?
-btn 1,-
-btn 1,-
 число=5
 proc rnd
 proc replicbye
 btn tavernstraidertables, - #%bye$, Трэй
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraidertablestrayfight, Атаковать Трэя
 end
 
 :tavernstraidertablestraytalkhello
 pln - Что тебя интересует, #%name$?
 btn tavernstraidertablestraytalkwhy, - Чего здесь без дела сидишь?
-btn 1,-
-btn 1,-
 btn tavernstraidertablestraytalknnews, - Есть какие-нибудь слухи?
-btn 1,-
-btn 1,-
 число=5
 proc rnd
 proc replicbye
 btn tavernstraidertables, - #%bye$, Трэй
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraidertablestrayfight, Атаковать Трэя
 end
 
@@ -3974,12 +3894,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn tavernstraidertableskriltalkhello, - #%hello$#%cname$!
 if интеллект<0 then btn tavernstraidertableskriltalkstupid, - Эээ...Ммм...Дык...А?
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn tavernstraidertables, - #%bye$#%cname$.
 if интеллект<0 then btn tavernstraidertables, Шатаясь, отойти
-btn 1,-
-btn 1,-
 instr cname=человека
 if интеллект<2 then instr cname=существо
 if krilknow=1 then instr cname=Крила
@@ -4012,19 +3928,12 @@ if krilknow=1 then instr cname=, #%name$
 if krilknow=0 then instr cname=
 p - Вы что-то хотели#%cname$?
 btn tavernstraidertableskriltalkwho, - Кто вы?
-btn 1,-
-btn 1,-
 btn tavernstraidertableskriltalkmagic, - Какие услуги вы предлагаете?
-btn 1,-
-btn 1,-
 число=5
 proc rnd
 proc replicbye
 if krilknow=1 then instr cname=, Крил
 btn tavernstraidertables, - #%bye$#%cname$
-btn 1,-
-btn 1,-
-btn 1,-
 if krilknow=0 then instr cname=человека
 if krilknow=1 then instr cname=Крила
 btn tavernstraidertablesfightkril, Атаковать #%cname$
@@ -4033,11 +3942,7 @@ end
 :tavernstraidertableskriltalkmagic
 pln - Я маг по своей специальности и могу обучить вас тем заклинаниям земли, которые сам знаю. Однако мой орден налагает на меня запрет обучать кого-либо постороннего любым заклинаниям выше второго уровня. Короче говоря, я могу обучить вас заклинаниям лишь первого и второго уровня, а дальше - обращайтесь к главе ордена. Точное местонахождение нашего ордена я не имею права называть, но если в лесу Дендрос вы его поищите, то непременно найдёте. Ах, да - за свои услуги я беру небольшую плату в фонд ордена.
 btn tavernstraidertableskriltalkmagiclev1, - Обучите меня заклинанию первого уровня
-btn 1,-
-btn 1,-
 btn tavernstraidertableskriltalkmagiclev2, - Обучите меня заклинанию второго уровня
-btn 1,-
-btn 1,-
 btn tavernstraidertableskriltalkhello, - Ещё несколько вопросов...
 end
 
@@ -4049,9 +3954,7 @@ magiccost=magiccost-торговля
 if magiccost<12 then magiccost=12
 pln #magiccost$ Гил.
 btn tavernstraidertableskriltalkmagiclev1info, Информация о заклинаниях
-if inv_Гил>=magiccost then btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev1thornhand, Купить заклинание "Шипастая рука" & btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev1branch, Купить заклинание "Опутывающие ветви" & btn 1,- & btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev1aiming, Купить заклинание "Исцеление" & btn 1,-
-btn 1,-
-btn 1,-
+if inv_Гил>=magiccost then btn tavernstraidertableskriltalkmagiclev1thornhand, Купить заклинание "Шипастая рука" & btn tavernstraidertableskriltalkmagiclev1branch, Купить заклинание "Опутывающие ветви" & btn tavernstraidertableskriltalkmagiclev1aiming, Купить заклинание "Исцеление"
 btn tavernstraidertableskriltalkmagic, Ещё несколько вопросов...
 end
 
@@ -4068,8 +3971,6 @@ inv- #magiccost$, Гил
 if not Заклинания then inv+ Заклинания
 krilgold=krilgold+magiccost
 btn tavernstraidertableskriltalkmagiclev1, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraidertables, Закончить разговор
 end
 
@@ -4086,8 +3987,6 @@ if not Заклинания then inv+ Заклинания
 inv- #magiccost$, Гил
 krilgold=krilgold+magiccost
 btn tavernstraidertableskriltalkmagiclev1, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraidertables, Закончить разговор
 end
 
@@ -4103,8 +4002,6 @@ inv- #magiccost$, Гил
 if not Заклинания then inv+ Заклинания
 krilgold=krilgold+magiccost
 btn tavernstraidertableskriltalkmagiclev1, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraidertables, Закончить разговор
 end 
 :tavernstraidertableskriltalkmagiclev2
@@ -4115,9 +4012,7 @@ magiccost=magiccost-торговля
 if magiccost<25 then magiccost=25
 pln #magiccost$ Гил.
 btn tavernstraidertableskriltalkmagiclev2info, Информация о заклинаниях
-;if inv_Гил>=magiccost and зелмагия>0 then btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev2pblade, Купить заклинание "Отравленный клинок" & btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev2beastkick, Купить заклинание "Удар зверя" & btn 1,- & btn 1,- & btn 1,- & btn tavernstraidertableskriltalkmagiclev2noilluses, Купить заклинание "Снятие иллюзий" & btn 1,-
-btn 1,-
-btn 1,-
+;if inv_Гил>=magiccost and зелмагия>0 then btn tavernstraidertableskriltalkmagiclev2pblade, Купить заклинание "Отравленный клинок" & btn tavernstraidertableskriltalkmagiclev2beastkick, Купить заклинание "Удар зверя" & btn tavernstraidertableskriltalkmagiclev2noilluses, Купить заклинание "Снятие иллюзий"
 btn tavernstraidertableskriltalkmagic, Ещё несколько вопросов...
 end
 
@@ -4125,15 +4020,8 @@ end
 instr locname=tavernstraidertableskriltalkmagiclev2info
 pln Выберите заклинание.
 btn infobeastkick, Информация о заклинании "Удар зверя"
-btn 1,-
-btn 1,-
 btn infopblade, Информация о заклинании "Отравленный клинок"
-btn 1,-
-btn 1,-
 btn infonoilluses, Информация о заклинании "Снятие иллюзий"
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraidertableskriltalkmagiclev2, Назад
 end
 
@@ -4141,15 +4029,8 @@ end
 instr locname=tavernstraidertableskriltalkmagiclev1info
 pln Выберите заклинание.
 btn infothornhand, Информация о заклинании "Шипастая рука"
-btn 1,-
-btn 1,-
 btn infobranch, Информация о заклинании "Опутывающие ветви"
-btn 1,-
-btn 1,-
 btn infoaiming, Информация о заклинании "Исцеление"
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraidertableskriltalkmagiclev1, Назад
 end
 
@@ -4180,12 +4061,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn tavernstraidertablesalliratalkhello, - #%hello$#%cname$!
 if интеллект<0 then btn tavernstraidertablesalliratalkstupid, - Эээ...Ммм...Дык...А?
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn tavernstraidertables, - #%bye$#%cname$.
 if интеллект<0 then btn tavernstraidertables, Шатаясь, отойти
-btn 1,-
-btn 1,-
 instr cname=полу-эльфийку
 if интеллект<2 then instr cname=существо
 if furgotknow=1 then instr cname=Аллиру
@@ -4198,8 +4075,6 @@ if alliraknow=0 then p Полу-эльфийка
 if alliraknow=1 then p Аллира 
 pln суёт вам под нос какой-то листик.
 btn tavernstraidertablesalliratalkstupidyes, Вдохнуть
-btn 1,-
-btn 1,-
 btn tavernstraidertables, Шатаясь, отойти
 end
 
@@ -4209,8 +4084,6 @@ pln #%name$ вдыхает запах листа. Сначала аромат кажется слабым и даже каким-то д
 восприятие=восдопохмелья
 похмелье=0
 btn tavernstraidertablesalliratalkhello, Поблагодарить и поздороваться
-btn 1,-
-btn 1,-
 btn tavernstraidertables, Убраться подобру-поздорову
 end
 
@@ -4221,21 +4094,12 @@ if alliraknow=1 then pln -Ты что-нибудь хотел спросить, #%name$?
 alliraknow=1
 if tavernstraidertablesalliratalkworks=0 then btn tavernstraidertablesalliratalkwork, - Что ты здесь делаешь?
 if tavernstraidertablesalliratalkworks=1 then btn tavernstraidertablesalliratalkworkcheck, - Насчёт твоего задания...
-if tavernstraidertablesalliratalkworks<2 then btn 1,- & btn 1,-
 btn  tavernstraidertablesalliratalkplants, - Какие растения ты продаёшь?
-btn 1,-
-btn 1,-
 btn  tavernstraidertablesalliratalktrading, - Я хотел бы заняться торговлей
-btn 1,-
-btn 1,-
 число=5
 proc rnd
 proc replicbye
-if tavernstraidertablesalliratalkworks<2 then btn 1,-
 btn  tavernstraidertables, -#%bye$, Аллира
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraidertablesallirafight, Атаковать Аллиру
 end
 
@@ -5017,12 +4881,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn tavernstraiderbarvalmestalkhello, - #%hello$#%cname$!
 if интеллект<0 then btn tavernstraiderbarvalmestalkstupid, - Эээ... Ммм... Дык... А?; MDK !
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn tavernstraiderbar, - #%bye$#%cname$.
 if интеллект<0 then btn tavernstraiderbar, Шатаясь, отойти
-btn 1,-
-btn 1,-
 instr cname=сатира
 if интеллект<2 then instr cname=существо
 if valmesknow=1 then instr cname=Валмеса
@@ -5031,7 +4891,7 @@ end
 
 :tavernstraiderbarvalmestalkstupid
 pln - Нет, пить тебе больше нельзя. Может тебе комната нужна? Сейчас тебе, наверное, вздремнуть не мешало бы...
-if 4 Гил then btn tavernstraiderbarvalmestalkroombuy, - О & btn 1,- & btn 1,-
+if 4 Гил then btn tavernstraiderbarvalmestalkroombuy, - О
 btn tavernstraiderbar, Шатаясь, отойти
 end
 
@@ -5042,48 +4902,28 @@ proc rnd
 if рнд<1.1 then pln - В этой таверне вы можете вкусно поесть, выпить и провести ночь в тёплой постели, а не на холодной траве. Также вы можете пообщаться здесь и узнать последние новости - в этой таверне бывают представители почти всех народов Триона. Извините, но из спиртного есть только пиво.
 if рнд>=2 then pln - Здесь вы можете отдохнуть от дороги, перекусить и выпить. Присоединившись к какой-нибудь компании, вы можете узнать последние новости и слухи. Наконец, когда ноги уже не будут держать вас, вы можете переночевать в этой таверне.
 btn tavernstraiderbarvalmestalkbeer, - Кружку пива, Валмес.
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmestalkmeat, - Съестного, да побольше!
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmestalkroom, - Я хочу взять комнату на день.
-if ter=3 and valmesmustmoney=0 then btn 1,- & btn 1,- & btn 1,- & btn tavernstraiderbarvalmestalkmoney, - Я к тебе по личному делу.
-if ter=3 and valmesmustmoney=1 and furgottalkvalmes=1 then btn 1,- & btn 1,- & btn 1,- & btn tavernstraiderbarvalmestalkfurgot, - Фургот работает на тебя, да?
-btn 1,-
-btn 1,-
-btn 1,-
+if ter=3 and valmesmustmoney=0 then btn tavernstraiderbarvalmestalkmoney, - Я к тебе по личному делу.
+if ter=3 and valmesmustmoney=1 and furgottalkvalmes=1 then btn tavernstraiderbarvalmestalkfurgot, - Фургот работает на тебя, да?
 число=5
 proc rnd
 proc replicbye
 btn tavernstraiderbar, - #%bye$, Валмес.
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmesfight, Атаковать Валмеса
 end
 
 :tavernstraiderbarvalmestalkfurgot
 pln - Да, он - славный малый. Я его ещё с пелёнок знаю. Работящий, добрый по своей натуре. Правда, в последнее время в нём ни с того, ни с сего, проснулся боевой дух его предков. Что-то в нём изменилось... Боюсь, что однажды проснусь и не увижу его на привычном месте.
 btn tavernstraiderbarvalmestalkbeer, - Кружку пива, Валмес.
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmestalkmeat, - Съестного, да побольше 
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmestalkroom, - Я хочу взять комнату на день.
-if ter=3 and valmesmustmoney=0 then btn 1,- & btn 1,- & btn 1,- & btn tavernstraiderbarvalmestalkmoney, - Я к тебе по личному делу.
-if ter=3 and valmesmustmoney=1 and furgottalkvalmes=1 then btn 1,- & btn 1,- & btn 1,- & btn tavernstraiderbarvalmestalkfurgot, - Фургот работает на тебя, да?
-btn 1,-
-btn 1,-
-btn 1,-
+if ter=3 and valmesmustmoney=0 then btn tavernstraiderbarvalmestalkmoney, - Я к тебе по личному делу.
+if ter=3 and valmesmustmoney=1 and furgottalkvalmes=1 then btn tavernstraiderbarvalmestalkfurgot, - Фургот работает на тебя, да?
 число=5
 proc rnd
 proc replicbye
 btn tavernstraiderbar, - #%bye$, Валмес.
-btn 1,-
-btn 1,-
-btn 1,-
 btn tavernstraiderbarvalmesfight, Атаковать Валмеса
 end
 
@@ -5093,7 +4933,7 @@ pln - Валмес, мне надоело всё это однообразие и... эээ... в общем я хочу начать 
 p - Да, прав был твой отец. Он знал, что ты не усидишь на месте. Ну, что же, отговаривать тебя я не стану - ежу понятно, что это бесполезно. Но твой отец оставил мне кое-какие деньги как раз на такой случай. 40 Гил - не очень большая сумма, но это всё, что твой отец сумел скопить к старости.
 if valmesgold<40 and valmesgold>0 then p Сейчас, правда, дела идут не слишком хорошо и даже таких денег у меня нет. #valmesgold$ Гил - это всё, что у меня есть. Если деньги нужны тебе срочно, то можешь забрать их прямо сейчас. А можешь прийти через неделю - тогда у меня, скорее всего, будет вся сумма.
 if valmesgold<1 then p Да, #%name$, дела у меня идут очень плохо - у меня нет ни одного Гила... Но я уверен, что через пару недель у меня будут кой-какие деньги. & btn tavernstraiderbarvalmestalkhello, - Хорошо, вернёмся к этому позже
-if valmesgold>0 then btn tavernstraiderbarvalmestalktakemoney, - Да, я заберу свои деньги & btn 1,- & btn1,- & btn 1,- & btn tavernstraiderbarvalmestalkhello, - Пусть пока полежат у тебя
+if valmesgold>0 then btn tavernstraiderbarvalmestalktakemoney, - Да, я заберу свои деньги & btn tavernstraiderbarvalmestalkhello, - Пусть пока полежат у тебя
 end
 
 :tavernstraiderbarvalmestalktakemoney
@@ -5102,8 +4942,6 @@ inv+ 40, Гил
 valmesmustmoney=1
 pln - Держи, сынок. И удачи тебе в твоих приключениях!
 btn tavernstraiderbarvalmestalkhello, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraiderbar, Закончить разговор
 end
 
@@ -5113,14 +4951,12 @@ inv+ 40, Гил
 valmesmustmoney=1
 pln - Держи, сынок. И удачи тебе в твоих приключениях!
 btn tavernstraiderbarvalmestalkhello, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraiderbar, Закончить разговор
 end
 
 :tavernstraiderbarvalmestalkroom
 if tavernstraiderrooms=1 then pln - Парень, ты чего? Ты ж уже снял комнату! & btn tavernstraiderbarvalmestalkhello, - Ах, да, я забыл.
-if 4 Гил and tavernstraiderrooms=0 then btn tavernstraiderbarvalmestalkroombuy, - Держи деньги, а я пойду вздремну. & btn1,- & btn 1,- & btn 1,- 
+if 4 Гил and tavernstraiderrooms=0 then btn tavernstraiderbarvalmestalkroombuy, - Держи деньги, а я пойду вздремну.
 if tavernstraiderrooms=0 then pln - Уютная комната на день стоит четыре гил. & btn tavernstraiderbarvalmestalkhello, - Нет, комната мне не нужна
 end
 
@@ -5141,13 +4977,13 @@ tavernstraiderroomyear=year
 if day=31 and месяцдни=31 then tavernstraiderroommonth=month+1 & tavernstraiderroomday=1
 if day=31 and common=176412 then tavernstraiderroommonth=1 & tavernstraiderroomday=1 & tavernstraiderroomyear=tavernstraiderroomyear+1
 if day=30 and месяцдни=30 then tavernstraiderroommonth=month+1 & tavernstraiderroomday=1
-if похмелье=0 then btn tavernstraiderbarvalmestalkhello, Продолжить разговор & btn 1,- & btn 1,-
+if похмелье=0 then btn tavernstraiderbarvalmestalkhello, Продолжить разговор
 btn tavernstraiderbar, Закончить разговор
 end
 
 :tavernstraiderbarvalmestalkmeat
 pln - Наше фирменное жаркое стоит два гил. Рекомендую!
-if 2 Гил then btn tavernstraiderbarvalmestalkmeatbuy, - Мне одну порцию. & btn1,- & btn 1,- & btn 1,-
+if 2 Гил then btn tavernstraiderbarvalmestalkmeatbuy, - Мне одну порцию.
 btn tavernstraiderbarvalmestalkhello, - Как-нибудь в другой раз.
 end
 
@@ -5159,14 +4995,12 @@ valmesgold=valmesgold+2
 if выносливость>максвыносливость+0.9 then выносливость=(максвыносливость+0.9)
 pln #%name$ вкусно поел "фирменного" жаркого. Да, что ни говори, а хвалят его не зря!
 btn tavernstraiderbarvalmestalkhello, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraiderbar, Закончить разговор
 end
 
 :tavernstraiderbarvalmestalkbeer
 pln - Один гил, #%name$.
-if Гил then btn tavernstraiderbarvalmestalkbeerbuy, - Держи! & btn1,- & btn 1,- & btn 1,- 
+if Гил then btn tavernstraiderbarvalmestalkbeerbuy, - Держи!
 btn tavernstraiderbarvalmestalkhello, - Я передумал.
 end
 
@@ -5190,8 +5024,6 @@ if восприятие>0 and похмелье<1 then восдопохмелья=восприятие & восприятие=воспри
 if восприятие>0 and похмелье>0 then восприятие=восприятие-1
 похмелье=похмелье+50
 btn tavernstraiderbarvalmestalkhello, Продолжить разговор
-btn 1,-
-btn 1,-
 btn tavernstraiderbar, Закончить разговор
 end
 
@@ -5288,12 +5120,8 @@ proc rnd
 proc replichello
 if интеллект>=0 then btn forestprotfieldbugsraidertalkhello, - #%hello$, крестьянин!
 if интеллект<0 then btn forestprotfieldbugsraidertalkstupid, - Эээ...Ммм...Дык...А?
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn forestprotfieldbugs, - #%bye$.
 if интеллект<0 then btn forestprotfieldbugs, Шатаясь, отойти
-btn 1,-
-btn 1,-
 btn forestprotfieldbugraiderfight, Атаковать крестьянина
 end
 
@@ -5305,14 +5133,8 @@ end
 :forestprotfieldbugsraidertalkhello
 pln - Чего вам надобно, сударь?
 btn forestprotfieldbugsraidertalkbugs, - Что это за создания?
-btn 1,-
-btn 1,-
 btn forestprotfieldbugsraidertalkvillage, - Что у вас за деревня?
-btn 1,-
-btn 1,-
 if интеллект>=0 then btn forestprotfieldbugs, - #%bye$.
-btn 1,-
-btn 1,-
 btn forestprotfieldbugsraiderfight, Атаковать крестьянина
 end
 
