@@ -3255,7 +3255,8 @@ if tavernstraideraroundfurgottalkwoods=0 then btn tavernstraideraroundfurgottalk
 if tavernstraideraroundfurgottalkwoods=1 then btn tavernstraideraroundfurgottalkwoodyes, Колоть дрова
 btn 1,-
 btn 1,-
-if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$ & btn 1,- & btn 1,- & btn 1,- if furgotknow=1 then instr cname=, Фургот
+if furgotknow=0 then btn tavernstraideraroundfurgottalkabout, - Будем знакомы, меня зовут #%name$ & btn 1,- & btn 1,- & btn 1,-
+if furgotknow=1 then instr cname=, Фургот
 if furgotknow=0 then instr cname=
 btn tavernstraideraround, - #%bye$#%cname$
 btn 1,-
@@ -3334,7 +3335,8 @@ if сила<4 and мешок=0 then pln Подержав топорик немного, #%name$ понял, что это 
 if колоружия=1 and сила<весоружия+4 and мешок=0 then pln У вас уже есть одно оружие, а чтобы поднять второе, вам не хватает силы.
 if колоружия=2 & мешок=0 then pln У вас заняты обе руки.
 if колоружия>0 and сила>3 and мешок=1 then pln #%name$ взял малый топор и положил его в свой мешок.#/$ & inv+ Малый_топор & весинв=весинв+3 & #%cname$axes=#%cname$axes-1
-if колоружия=0 and сила>3 and мешок=0 or колоружия=1 and сила>весоружия+4 and мешок=0 then pln #%name$ взял малый топор.#/$ & inv+ Малый_топор & весоружия=весоружия+4 & колоружия=колоружия+1 & #%cname$axes=#%cname$axes-1 end
+if колоружия=0 and сила>3 and мешок=0 or колоружия=1 and сила>весоружия+4 and мешок=0 then pln #%name$ взял малый топор.#/$ & inv+ Малый_топор & весоружия=весоружия+4 & колоружия=колоружия+1 & #%cname$axes=#%cname$axes-1
+end
 
 :takeaxe2
 if сила<5 or колоружия>0 and мешок=0 and размер<3 or колоружия=1 and размер=3 and сила<весоружия+5 then pln #%name$ с трудом поднял двуручный топор, попытался взмахнуть и тут же выронил - настолько он показался вам неподъёмным.
@@ -3647,7 +3649,8 @@ end
 :tavernstraidertablesalliradiegil
 pln #%name$ обыскал мёртвую полу-эльфийку и вытащил из маленького мешочка на её поясе #alliragold$ Гил.
 inv+ #alliragold$,Гил
-alliragil=0btn tavernstraidertablesalliradie, Назад
+alliragil=0
+btn tavernstraidertablesalliradie, Назад
 end
 
 :takerobe
@@ -4142,11 +4145,13 @@ btn 1,-
 btn 1,-
 btn infobranch, Информация о заклинании "Опутывающие ветви"
 btn 1,-
-btn 1,- btn infoaiming, Информация о заклинании "Исцеление"
+btn 1,-
+btn infoaiming, Информация о заклинании "Исцеление"
 btn 1,-
 btn 1,-
 btn 1,-
-btn tavernstraidertableskriltalkmagiclev1, Назадend
+btn tavernstraidertableskriltalkmagiclev1, Назад
+end
 
 :tavernstraidertableskriltalkwho
 pln - Моё имя - Крил. Да, знаю, знаю - это не человеческое имя. Но друидам, в состав которых я вхожу, даются новые имена. Кто такие друиды? Друиды - это маги леса и земли. Мы владеем зелёной магией и поддерживаем союз с монахами и фирамантами. Свет - это жизнь, а в любом дереве есть жизнь. Огонь, по нашему убеждению - это не разрушение, а преобразование, преобразование всего в пепел. А пепел подобен земле. Своими заклятыми врагами мы считаем аквамантов и некромантов, ибо вода - это иллюзии, за которыми лишь обман, который мы презираем. Смерть же, несёт в себе только всеобщее уничтожение и уподобление хаосу, что для нас, хранителей жизни, неприемлемо. Я мог бы начать более тонкие дискуссии, но на это у нас нет времени. Теперь, когда я представился и рассказал о себе, позволь мне узнать твоё имя.
@@ -5155,7 +5160,8 @@ if выносливость>максвыносливость+0.9 then выносливость=(максвыносливость+0.9)
 pln #%name$ вкусно поел "фирменного" жаркого. Да, что ни говори, а хвалят его не зря!
 btn tavernstraiderbarvalmestalkhello, Продолжить разговор
 btn 1,-
-btn 1,-btn tavernstraiderbar, Закончить разговор
+btn 1,-
+btn tavernstraiderbar, Закончить разговор
 end
 
 :tavernstraiderbarvalmestalkbeer
@@ -5174,14 +5180,16 @@ btn tavernstraiderbar, Отойти
 end
 
 :tavernstraiderbarbeerdrink
-pln #%name$ выпил пиво. Жидкость немного взбодрила, но притупила ваше восприятие и интеллект.inv- Кружка_пива
+pln #%name$ выпил пиво. Жидкость немного взбодрила, но притупила ваше восприятие и интеллект.
+inv- Кружка_пива
 бодрость=бодрость+1.5
 if бодрость>бодрость+0.9 then бодрость=бодрость+0.9
 if похмелье<1 then интдопохмелья=интеллект
 интеллект=интеллект-1
 if восприятие>0 and похмелье<1 then восдопохмелья=восприятие & восприятие=восприятие-1
 if восприятие>0 and похмелье>0 then восприятие=восприятие-1
-похмелье=похмелье+50btn tavernstraiderbarvalmestalkhello, Продолжить разговор
+похмелье=похмелье+50
+btn tavernstraiderbarvalmestalkhello, Продолжить разговор
 btn 1,-
 btn 1,-
 btn tavernstraiderbar, Закончить разговор
@@ -5741,7 +5749,8 @@ end
 :Use_Гил_Бросить
 if dangerplace=0 and сундукхранения=0 then pln #/$#/$#%name$ выбросил ненужные ему деньги. & inv_Гил=0
 if dangerplace=1 then pln #/$#/$Сейчас нельзя ничего выкидывать!
-if dangerplace=0 and сундукхранения=1 then goto boxdropгил end
+if dangerplace=0 and сундукхранения=1 then goto boxdropгил
+end
 
 :Use_Сырое_мясо
 p #/$#/$Кусок сырого и плохо пахнущего мяса. 
