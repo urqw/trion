@@ -3585,7 +3585,7 @@ end
 :tavernstraidertablesalliradiegil
 pln #%name$ обыскал мёртвую полу-эльфийку и вытащил из маленького мешочка на её поясе #alliragold$ Гил.
 inv+ #alliragold$,Гил
-alliragil=0
+alliragold=0
 btn tavernstraidertablesalliradie, Назад
 end
 
