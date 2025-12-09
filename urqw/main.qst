@@ -4644,6 +4644,10 @@ goto boxopen
 end
 
 :saving
+pln Игра сохранена!
+btn #%locname$, Продолжить игру
+save
+/*
 save saving2
 pln ***Скопируйте следующие строчки в сохранение игры - в файл .qsv (можно открыть его любым текстовым редактором):
 pln #%ins$ name=#%name$
@@ -4655,8 +4659,9 @@ pln #%ins$ weapexp=a
 pln #%ins$ imagearmor=#%imagearmor$
 pln #%ins$ imageshoes=#%imageshoes$
 pln #%ins$ imagecap=#%imagecap$
-pln Эти неудобства присутствуют в URQ 1.4. Возможно, в более новых версиях ничего копировать будет не нужно.
+pln Эти неудобства присутствуют в URQ 1.4. Возможно, в более новых версиях ничего копировать будет не нужно.***
 btn #%locname$, Вернуться в игру
+*/
 end
 
 :saving2
