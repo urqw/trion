@@ -15,12 +15,12 @@
 			<description>Трион - это текстовая ролевая игра в стиле фэнтези. Действие игры происходит в Трионе - фэнтезийном мире, населённом десятками различных рас и сотнями видов монстров. Цель игры - спасти этот мир, а от чего и как, станет ясно во время прохождения. При новой игре, вам нужно будет выбрать одну из 20 доступных рас и свою склонность к силе или магии. Затем вам предстоит выбрать стартовую точку персонажа (в демо-версии доступна лишь одна такая точка).<br/>Часть первая.<br/>Версия 0.22 Demo</description>
 		</bibliographic>
 		<contacts>
-			<url>https://urqw.github.io/UrqW/?url=https://urqw.github.io/trion/urqw.zip</url>
+			<url>https://urqw.github.io/trion</url>
 			<authoremail>tqstru@tqst.ru</authoremail>
 		</contacts>
 		<colophon>
 			<generator>UrqW Game Template</generator>
-			<originated>2025-12-09</originated>
+			<originated>2025-12-10</originated>
 		</colophon>
 	</story>
 </ifindex>
