@@ -4,7 +4,7 @@ Text-based game "Trion" (Russian: "Трион") by Terracon.
 
 The game is in Russian, developed for RipURQ, and adapted for [UrqW](https://github.com/urqw/UrqW) text-based game engine.
 
-This repository contains the source code and other resources of the game. The game is available for launch via [UrqW](https://urqw.github.io/UrqW/?url=https://urqw.github.io/trion/urqw.zip).
+This repository contains the source code and other resources of the game. The game is available for launch via [UrqW](https://urqw.github.io/UrqW/?url=https://urqw.github.io/trion/trion.zip).
 
 The game was first published on December 15, 2003.
 
